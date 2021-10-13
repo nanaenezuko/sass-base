@@ -1,0 +1,27 @@
+=border($rad, $style)
+  border-radius: $rad
+  border: $style
+
+=transform-rotate($rotate)
+  -moz-transform: rotate($rotate)
+  -webkit-transform: rotate($rotate)
+  -o-transform: rotate($rotate)
+  -ms-transform: rotate($rotate)
+  transform: rotate($rotate)
+
+=box-shadow($shadow)
+  -webkit-box-shadow: $shadow
+  box-shadow: -$shadow
+
+=button-primary($bg-color, $padding-v, $padding-h, $hover-color, $hover-text-color)
+  background-color: $bg-color
+  border: 1px solid $brand-primary
+  padding: $padding-v $padding-h
+  &:hover
+    color: $hover-text-color
+    background-color: $hover-color
+    border: 1px solid $brand-primary
+  &:active
+    color: $hover-text-color
+    background-color: $hover-color
+    border: 1px solid $brand-primary
